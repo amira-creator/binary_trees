@@ -46,7 +46,7 @@ int avl(const binary_tree_t *tree, int min, int max)
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t l_height = 0, r_height = 0;
-	
+
 	if (!tree)
 		return (0);
 	l_height = tree->left ? 1 + binary_tree_height(tree->left) : 0;
