@@ -9,6 +9,7 @@ int exponent(int x, int y);
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	size_t height = 0, nodes = 0, power = 0;
+
 	if (!tree)
 		return (0);
 	if (!tree->right && !tree->left)
@@ -40,7 +41,7 @@ int exponent(int x, int y)
  * binary_tree_size - Function that measures the size of a binary tree
  * @tree: The tree to measure the size of
  * Return: size of tree, 0 otherwise
- * */
+*/
 size_t binary_tree_size(const binary_tree_t *tree)
 {
 	if (!tree)
