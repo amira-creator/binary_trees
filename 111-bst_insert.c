@@ -19,7 +19,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 	{
 		tmp_2 = tmp;
 		if (value < tmp->n)
-			mp = tmp->left;
+			tmp = tmp->left;
 		else if (value > tmp->n)
 			tmp = tmp->right;
 		else if (value == tmp->n)
